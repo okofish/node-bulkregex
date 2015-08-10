@@ -14,11 +14,12 @@ The replacement file is a JSON file that looks something like this:
   "from": "new study",
   "to": "tumblr post"
 }, {
-  "from": "rebuild",
-  "to": "avenge"
+  "from": "wheee*!?",
+  "to": "whee!"
 }, {
   "from": "space",
-  "to": "spaaace"
+  "to": "SPAAACE",
+  "flags": "gi"
 }, {
   "from": "smartphone",
   "to": "pokédex"
@@ -33,4 +34,4 @@ node replace.js xkcd1031.json -i keyboard.txt -o leopard.txt
 ```
 
 ## Performance
-Speedy performance is in important part of any bulk replacement program. I test this one `benchmark.sh`, included in the repo. On my MacBook Air, it executes in around 600 ms (wall clock time.)
+Speedy performance is an important part of any bulk replacement program. I test this one using `benchmark.sh`, included in the repo. On my MacBook Air, it executes in around 600 ms (wall clock time.)

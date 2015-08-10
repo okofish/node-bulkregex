@@ -31,7 +31,6 @@ var readinput = (function(cb) {
     var chunk = process.stdin.read();
     if (chunk !== null) {
       str = str.concat(chunk)
-        //process.stdout.write('data: ' + chunk);
     }
   });
   process.stdin.on('end', function() {
@@ -54,7 +53,7 @@ readinput(function(input){
     if (err) throw err;
     json = JSON.parse(data)
     _.map(json, function(obj) {
-      obj["from"] = new RegExp(obj["from"], 'g');
+      obj["from"] = new RegExp(obj["from"], obj["flags"] || "g");
       regexps.push(obj)
     })
     _.map(regexps, function(regexp) {
