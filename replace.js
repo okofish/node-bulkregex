@@ -19,7 +19,7 @@ if (!argv._.length === 0) {
 var output = function(replaced) {
   process.stdout.write(replaced)
 }
-if (argv.output) {
+if (argv.output || argv.o) {
   output = function(replaced) {
     fs.writeFileSync(argv.output, replaced)
   }
@@ -40,9 +40,9 @@ var readinput = (function(cb) {
 })
 
 
-if (argv.input) {
+if (argv.input || argv.i) {
   readinput = (function(cb) {
-    fs.readFile(argv.input, function(err, str) {
+    fs.readFile(argv.input || argv.i, function(err, str) {
       if (err) throw err;
       cb(str.toString())
     })
