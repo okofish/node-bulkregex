@@ -21,7 +21,7 @@ var output = function(replaced) {
 }
 if (argv.output || argv.o) {
   output = function(replaced) {
-    fs.writeFileSync(argv.output, replaced)
+    fs.writeFileSync(argv.output || argv.o, replaced)
   }
 }
 
