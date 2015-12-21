@@ -1,0 +1,23 @@
+{
+  "name": "node-bulkregex",
+  "version": "1.0.0",
+  "description": "CLI for easy application of lots of regexes to a text file",
+  "main": "replace.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okofish/node-bulkregex"
+  },
+  "author": "Jesse Friedman <jesse@jesse.ws>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okofish/node-bulkregex/issues"
+  },
+  "homepage": "https://github.com/okofish/node-bulkregex",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "underscore": "^1.8.3"
+  }
+}
