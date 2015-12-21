@@ -34,4 +34,4 @@ node replace.js xkcd1031.json -i keyboard.txt -o leopard.txt
 ```
 
 ## Performance
-Speedy performance is an important part of any bulk replacement program. I test this one using `benchmark.sh`, included in the repo. On my MacBook Air, it executes in around 600 ms (wall clock time.)
+Speedy performance is an important part of any bulk replacement program. I test this one using `benchmark.sh`, included in the repo. On my MacBook Air, it executes in around 300 ms (wall clock time.)
